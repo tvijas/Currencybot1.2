@@ -33,8 +33,8 @@ public class TelegramBot extends TelegramLongPollingBot {
         // Устанавливаем временную зону на GMT (или любую другую, подходящую для вас)
         TimeZone gmtTimeZone = TimeZone.getTimeZone("GMT");
         Calendar calendar = Calendar.getInstance(gmtTimeZone);
-        calendar.set(Calendar.HOUR_OF_DAY, 19); // Устанавливаем часы (11:00 GMT)
-        calendar.set(Calendar.MINUTE, 55);      // Устанавливаем минуты
+        calendar.set(Calendar.HOUR_OF_DAY, 11); // Устанавливаем часы (11:00 GMT)
+        calendar.set(Calendar.MINUTE, 0);      // Устанавливаем минуты
         calendar.set(Calendar.SECOND, 0);      // Устанавливаем секунды
         Date scheduledTime = calendar.getTime();
 
