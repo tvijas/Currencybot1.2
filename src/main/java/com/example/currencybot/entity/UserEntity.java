@@ -16,7 +16,7 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "user", schema = "currencybot")
+@Table(name = "user")
 public class UserEntity {
     @Id
     @Column(name = "chatId")
