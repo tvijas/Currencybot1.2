@@ -70,8 +70,8 @@ public class TelegramBot extends TelegramLongPollingBot {
 
     public void startCommandReceived(long chatId) throws TelegramApiException {
 
-        String answer = "EURO     = " + currencyRatesList [0]
-                    + "\nDOLLAR = " + currencyRatesList [1]
+        String answer = "DOLLAR = " + currencyRatesList [0]
+                    + "\nEURO     = " + currencyRatesList [1]
                     + "\nZLOTY    = " + currencyRatesList [2];
         sendMessage(chatId, answer);
     }
