@@ -35,7 +35,7 @@ public class DailyCurrencyUpdateTask extends TimerTask {
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         Session session = null;
         try {
-            // Остальной код остается неизменным
+            
             session = sessionFactory.openSession();
             String hql = "SELECT u.chatId FROM UserEntity u";
             Query query = session.createQuery(hql);
